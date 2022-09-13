@@ -1,0 +1,164 @@
+body {
+  background: #e3e3e3;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.my-photo p {
+  text-align: center;
+  padding: 3px;
+  color: #483838;
+  font-size: 21px;
+}
+
+.my-photo a {
+  text-align: center;
+  color: #483838;
+  text-decoration: none;
+}
+
+img {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 99em;
+  box-shadow: 0px 0px 10px 5px;
+  color: #483838;
+}
+
+.tabel-sederhana h2 {
+  text-align: center;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 30px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 20px;
+  box-shadow: 0px 0px 10px 3px;
+  background: #e3e3e3;
+}
+
+.tabel-sederhana a {
+  text-decoration: none;
+  color: #483838;
+}
+
+.tabel-css h2 {
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 20px;
+  box-shadow: 0px 0px 10px 3px;
+  background: #e3e3e3;
+}
+
+.tabel-css a {
+  text-decoration: none;
+  color: #483838;
+}
+
+.tabel-jquery h2 {
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 20px;
+  box-shadow: 0px 0px 10px 3px;
+  background: #e3e3e3;
+}
+
+.tabel-jquery a {
+  text-decoration: none;
+  color: #483838;
+}
+
+.title {
+  text-align: center;
+}
+
+td,
+th {
+  border: 2px solid #141414;
+  text-align: center;
+  padding: 10px;
+}
+
+td:hover {
+  background-color: #f7f7f7;
+}
+
+th:hover {
+  background-color: #f7f7f7;
+}
+
+.kepala-tabel {
+  background-color: #b0b0b0;
+}
+
+.tabel {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tombol-back {
+  margin-top: 40px;
+}
+
+.tombol-back a {
+  background-color: #b0b0b0;
+  font-size: 20px;
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.tombol-back a:hover {
+  background-color: #f7f7f7;
+}
+
+.tombol-back-css {
+  margin-top: 40px;
+}
+
+.tombol-back a {
+  background-color: #b0b0b0;
+  font-size: 20px;
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.tombol-back a:hover {
+  background-color: b#f7f7f7;
+}
+
+.ngubah {
+  background-color: #b0b0b0;
+}
+
+.ngubah:hover {
+  background-color: #f7f7f7;
+}
+
+.ngapus {
+  background-color: #b0b0b0;
+}
+
+.ngapus:hover {
+  background-color: #f7f7f7;
+}

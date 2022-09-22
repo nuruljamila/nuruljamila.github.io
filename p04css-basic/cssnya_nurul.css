@@ -1,0 +1,23 @@
+body {
+   font-family: sans-serif;
+   background-color:#ADD8E6;
+   height: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+select:hover {
+  background-color: #dedbd7;
+}
+
+option:hover {
+  background-color: #dedbd7;
+}
+
+input:hover {
+  background-color: #dedbd7;
+}
+
+textarea:hover {
+  background-color: #dedbd7;
+}
+

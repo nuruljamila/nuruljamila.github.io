@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>P05 JQuery FadeOut When Delete</title>
+  </head>
+  <body>
+    <h1 class="title">The Top 10 My Best Friends</h1>
+    <table class="tabel">
+      <tr class="kepala-tabel">
+        <th class="NIM">NIM</th>
+        <th class="NAMA">Nama</th>
+        <th class="ALAMAT">Alamat</th>
+        <th class="AKSI">Action</th>
+      </tr>
+
+      <tr class="baris" id="baris__1">
+        <td>41226087</td>
+        <td class="cell" id="nama_mhs__1">RAHMALIA PUTRI</td>
+        <td class="cell" id="alamat__1">GARUT</td>
+        <td class="cell" id="hapus__1">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__2">
+       <td>41226055</td>
+        <td class="cell" id="nama_mhs__2">SITI NUR ALIFAH</td>
+        <td class="cell" id="alamat__2">MAJALENGKA</td>
+        <td class="cell" id="hapus__2">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__3">
+        <td>41226038</td>
+        <td class="cell" id="nama_mhs__3">MUHAMAD ADITHYA PRATAMA</td>
+        <td class="cell" id="alamat__3">CIREBON</td>
+        <td class="cell" id="hapus__3">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__4">
+        <td>41226114</td>
+        <td class="cell" id="nama_mhs__4">PANKRASIUS NGGALA</td>
+        <td class="cell" id="alamat__4">FLORES</td>
+        <td class="cell" id="hapus__4">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__5">
+       <td>41226091</td>
+        <td class="cell" id="nama_mhs__5">RIO FEBRIAN</td>
+        <td class="cell" id="alamat__5">TEGAL</td>
+        <td class="cell" id="hapus__5">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__6">
+        <td>41226070</td>
+        <td class="cell" id="nama_mhs__6">DERIS SETIADI</td>
+        <td class="cell" id="alamat__6">GARUT</td>
+        <td class="cell" id="hapus__6">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__7">
+      <td>41226036</td>
+      <td class="cell" id="nama_mhs__7">GUNAWAN</td>
+      <td class="cell" id="alamat__7">BREBES</td>
+      <td class="cell" id="hapus__7">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__8">
+        <td>41226085</td>
+        <td class="cell" id="nama_mhs__8">MUKLISIN ILAHUDIN</td>
+        <td class="cell" id="alamat__8">BREBES</td>
+        <td class="cell" id="hapus__8">Delete</td>
+      </tr>
+
+      <tr class="baris" id="baris__9">
+         <td>41226095</td>
+        <td class="cell" id="nama_mhs__9">SALMAN ABDULLOH</td>
+        <td class="cell" id="alamat__9">TEGAL</td>
+        <td class="cell" id="hapus__9">Delete</td>
+      </tr>
+      <tr class="baris" id="baris__10">
+        <td>41226114</td>
+        <td class="cell" id="nama_mhs__10">PANKRASIUS NGGALA</td>
+        <td class="cell" id="alamat__10">FLORES</td>
+        <td class="cell" id="hapus__10">Delete</td>
+      </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script type="text/javascript">
+   $(document).ready(function(){
+    $('.cell').click(function(){
+        let isi = $(this).text();
+        let tid = $(this).prop('id');
+        let rid = tid.split('__');
+        let id_baris = rid[1];
+        let nama_mhs = $('#nama_mhs__'+id_baris).text();
+
+        if(isi=='Delete'){
+            let yakin = confirm(`Anda yakin ingin menghapus data atas nama ${nama_mhs} ??`);
+            if(!yakin) return;
+
+            $('#baris__'+id_baris).fadeOut();
+        }else{
+            alert('Aksi Lain untuk Cell ini belum ada. Terimakasih sudah mencoba.');
+        }
+    })
+})
+ </script>
+
+  </body>
+</html>
